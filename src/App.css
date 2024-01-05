@@ -28,16 +28,23 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   width: 100%;
 }
 
 .app {
-  width: 87%;
+  width: 100%;
+}
+
+.main-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 header {
-  width: 100%;
+  width: 87%;
   color: #FFF;
   display: flex;
   justify-content: space-between;
@@ -49,3 +56,5 @@ header {
   font-weight: 700;
   font-size: 1.6rem;
 }
+
+/*Styling for Product Heading Component */
