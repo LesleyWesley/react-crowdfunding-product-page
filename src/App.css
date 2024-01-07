@@ -74,6 +74,7 @@ header {
   padding: 2rem 1.125rem;
   margin-bottom: 2rem;
   width: 87%;
+  max-width: 700px;
 }
 
 p {
@@ -106,6 +107,7 @@ button {
   margin-top: 10rem;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 h1 {
@@ -233,8 +235,7 @@ h1 {
   }
 
   .card {
-    width: 700px;
-    padding: 2.5rem;
+    padding: 2.75rem;
   }
 
   .product-heading--button-section {
@@ -249,4 +250,22 @@ h1 {
     display: flex;
     padding: 1rem 1.5rem 1rem 1.25rem;
   }
+
+  /*Stats Overview Component - Desktop*/
+
+  .stats-overview--numbers-section {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .divider {
+    width: 1px;
+    height: 4rem;
+  }
+
+  .stats-overview--outer-bar {
+    margin-top: 2rem;
+  }
+
 }

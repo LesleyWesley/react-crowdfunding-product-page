@@ -4,7 +4,7 @@ function ProductHeading () {
   return (
     <div className="product-heading-section">
       <img src="logo-mastercraft.svg" alt="" className="logo"/>
-      <div className="product-heading--main card">
+      <div className="card product-heading--main">
           <h1>Mastercraft Bamboo Monitor Riser</h1>
           <p>A beautifully & handcrafted monitor stand to reduce neck and eye strain.</p>
           <div className="product-heading--button-section">
