@@ -1,4 +1,5 @@
 import React from "react"
+import RewardOptionAvailable from "../components/RewardOptionAvailable.jsx"
 
 function AboutSection() {
   return (
@@ -8,6 +9,8 @@ function AboutSection() {
       <br></br>
       <br></br>
       Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+      <RewardOptionAvailable />
+      <RewardOptionAvailable />
     </div>
   )
 }

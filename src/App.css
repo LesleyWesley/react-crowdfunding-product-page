@@ -131,7 +131,9 @@ h1 {
 }
 
 .backing-button:active,
-.backing-button:hover {
+.backing-button:hover,
+.select-reward:active,
+.select-reward:hover {
   cursor: pointer;
   background-color: var(--dark-accent-clr);
 }
@@ -209,6 +211,67 @@ h2 {
 
 .about-paragraphs {
   text-align: left;
+}
+
+/*Reward Option Component*/
+
+.reward-option {
+  width: 100%;
+  border: 1px solid var(--dark-neutral-clr);
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: .75rem;
+}
+
+.option-heading {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+}
+
+h3 {
+  margin: 0;
+  color: var(--black-clr);
+  font-size: 1rem;
+}
+
+.option-description {
+  color: var(--light-accent-clr);
+  font-size: .9rem;
+  font-weight: 500;
+  margin: .5rem 0 .75rem 0;
+}
+
+.option-paragraph {
+  text-align: left;
+}
+
+.option-footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.option-footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount-remaining {
+  color: var(--black-clr);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.select-reward {
+  background-color: var(--light-accent-clr);
+  padding: 1rem 1.75rem;
 }
 
 /*========== MEDIA QUERIES ===========================*/
