@@ -1,19 +1,19 @@
 import React from "react"
 
-function RewardOptionAvailable() {
+function RewardOptionAvailable(props) {
   return (
     <div className="reward-option">
         <div className="option-heading">
-            <h3>Bamboo Stand</h3>
-            <span className="option-description">Pledge $25 or more</span>
+            <h3>{props.name}</h3>
+            <span className="option-description">Pledge {props.pledgeAmount} or more</span>
         </div>
-        <p className="option-paragraph">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.</p>
+        <p className="option-paragraph">{props.description}</p>
         <div className="option-footer">
           <p>
-            <span className="amount-remaining">101</span>
+            <span className="amount-remaining">{props.remaining}</span>
             left
           </p>
-          <button type="button" className="select-reward">Select Reward</button>
+          <button type="button" className="select-reward">{props.soldOut ? "Out of Stock" : "Select Reward"}</button>
         </div>
     </div>
   )

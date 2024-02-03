@@ -1,7 +1,21 @@
 import React from "react"
 import RewardOption from "../components/RewardOption.jsx"
 
-function AboutSection() {
+function AboutSection(props) {
+
+  const rewardElements = props.data.map(reward => {
+    return (
+      <RewardOption
+        key={reward.rewardName}
+        name={reward.rewardName}
+        pledgeAmount={reward.pledgeAmount}
+        description={reward.rewardDescription}
+        remaining={reward.rewardsLeft}
+        soldOut={reward.soldOut}
+      />
+    )
+  })
+
   return (
     <div className="card about-section">
       <h2>About this project</h2>
@@ -9,9 +23,7 @@ function AboutSection() {
       <br></br>
       <br></br>
       Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer to allow notepads, pens, and USB sticks to be stored under the stand.</p>
-      <RewardOption/>
-      <RewardOption/>
-
+      {rewardElements}
     </div>
   )
 }
