@@ -313,6 +313,10 @@ h3 {
      padding: 1rem 1.5rem 1rem 1.25rem;
    }
 
+   .bookmark-heading.bookmarked {
+     color: var(--light-accent-clr);
+   }
+
 }
 
 @media (min-width: 1200px) {

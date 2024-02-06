@@ -9,9 +9,9 @@ function ProductHeading (props) {
           <p>A beautifully & handcrafted monitor stand to reduce neck and eye strain.</p>
           <div className="product-heading--button-section">
               <button type="button" className="backing-button">Back this project</button>
-              <button type="button" className="bookmark-button">
+              <button type="button" className="bookmark-button" onClick={props.handleClick}>
                   <img src={props.bookmarked ? "icon-bookmark-active.svg" : "icon-bookmark.svg"} alt="bookmark" />
-                  <span className="bookmark-heading">Bookmark</span>
+                  <span className={props.bookmarked ? "bookmark-heading bookmarked" : "bookmark-heading"}>{props.bookmarked ? "Bookmarked" : "Bookmark"}</span>
               </button>
           </div>
       </div>

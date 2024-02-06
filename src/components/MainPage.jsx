@@ -10,7 +10,7 @@ function MainPage(props) {
     <div className="main-page">
         <Header />
         <div className="main-page--main-section">
-          <ProductHeading bookmarked={props.bookmarked}/>
+          <ProductHeading bookmarked={props.bookmarked} handleClick={props.handleClick}/>
           <StatsOverview />
           <AboutSection data={props.data}/>
         </div>

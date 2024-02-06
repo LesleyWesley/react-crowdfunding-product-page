@@ -9,9 +9,13 @@ function App() {
 
   const [bookmarked, setBookmarked] = React.useState(false)
 
+  function toggleBookmark() {
+    setBookmarked(prevBookmark => !prevBookmark)
+  }
+
   return (
     <div className="app">
-      <MainPage data={data} bookmarked={bookmarked}/>
+      <MainPage data={data} bookmarked={bookmarked} handleClick={toggleBookmark}/>
     </div>
   )
 }
