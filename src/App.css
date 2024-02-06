@@ -74,7 +74,7 @@ header {
   padding: 2rem 1.125rem;
   margin-bottom: 2rem;
   width: 87%;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 p {
@@ -304,6 +304,15 @@ h3 {
      margin-top: 7rem;
    }
 
+   .bookmark-button {
+     border-radius: 1.75rem;
+   }
+
+   .bookmark-heading {
+     display: flex;
+     padding: 1rem 1.5rem 1rem 1.25rem;
+   }
+
 }
 
 @media (min-width: 1200px) {
@@ -315,6 +324,10 @@ h3 {
 
   p {
     line-height: 2rem;
+  }
+
+  .card {
+    max-width: 700px;
   }
 
   /*Product Heading Component- Desktop*/
@@ -335,14 +348,6 @@ h3 {
     margin-top: 2.25rem;
   }
 
-  .bookmark-button {
-    border-radius: 1.75rem;
-  }
-
-  .bookmark-heading {
-    display: flex;
-    padding: 1rem 1.5rem 1rem 1.25rem;
-  }
 
   /*Stats Overview Component - Desktop*/
 

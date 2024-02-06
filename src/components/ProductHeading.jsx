@@ -1,6 +1,6 @@
 import React from "react"
 
-function ProductHeading () {
+function ProductHeading (props) {
   return (
     <div className="product-heading-section">
       <img src="logo-mastercraft.svg" alt="" className="logo"/>
@@ -10,7 +10,7 @@ function ProductHeading () {
           <div className="product-heading--button-section">
               <button type="button" className="backing-button">Back this project</button>
               <button type="button" className="bookmark-button">
-                  <img src="icon-bookmark-active.svg" alt="bookmark" />
+                  <img src={props.bookmarked ? "icon-bookmark-active.svg" : "icon-bookmark.svg"} alt="bookmark" />
                   <span className="bookmark-heading">Bookmark</span>
               </button>
           </div>
