@@ -286,7 +286,9 @@ h3 {
 
 .sold-out .select-reward {
   background-color: var(--dark-neutral-clr);
+  cursor: default;
 }
+
 
 /*========== MEDIA QUERIES ===========================*/
 
