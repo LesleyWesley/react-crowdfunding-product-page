@@ -305,15 +305,31 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 0rem 1rem;
 }
 
 .selection-modal-container {
-  height: 5rem;
-  width: 5rem;
+  width: 87%;
+  max-width: 500px;
   background-color: white;
-  top: 9rem;
+  top: 7.5rem;
   position: sticky;
+  border-radius: .75rem;
+  padding: 2rem 1.125rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-description {
+  text-align: left;
+  margin-top: 1.5rem;
 }
 
 /*========== MEDIA QUERIES ===========================*/
