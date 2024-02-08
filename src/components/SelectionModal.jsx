@@ -2,7 +2,10 @@ import React from "react"
 
 function SelectionModal(){
   return (
-    <h1>This is the Selection Modal!</h1>
+    <div className="selection-modal-bg">
+      <div className="selection-modal-container">
+      </div>
+    </div>
   )
 }
 

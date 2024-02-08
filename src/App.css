@@ -34,6 +34,10 @@ body {
 
 .app {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
 }
 
 .main-page {
@@ -42,6 +46,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
 
 header {
@@ -289,6 +294,27 @@ h3 {
   cursor: default;
 }
 
+/*Selection Modal Styling*/
+
+.selection-modal-bg {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0rem 1rem;
+}
+
+.selection-modal-container {
+  height: 5rem;
+  width: 5rem;
+  background-color: white;
+  top: 9rem;
+  position: sticky;
+}
 
 /*========== MEDIA QUERIES ===========================*/
 
