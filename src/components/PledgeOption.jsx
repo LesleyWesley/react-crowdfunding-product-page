@@ -13,8 +13,8 @@ function PledgeOption() {
             </div>
         </div>
         <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campain, and you'll be added to a special Backer member list.</p>
-        <p>
-          <span className="amount-remaining">101</span>
+        <p className="remaining-pledges-section">
+          <span>101</span>
           left
         </p>
     </div>

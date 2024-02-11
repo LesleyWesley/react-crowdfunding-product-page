@@ -3,6 +3,7 @@
   --dark-accent-clr: #147b74;
   --black-clr: #000;
   --dark-neutral-clr: #7a7a7a;
+  --mid-neutral-clr: hsla(0, 0%, 48%,30%);
   --light-neutral-clr: hsla(0, 0%, 48%, 10%);
 }
 
@@ -222,7 +223,7 @@ h2 {
 
 .reward-option {
   width: 100%;
-  border: 1px solid var(--dark-neutral-clr);
+  border: 1px solid var(--mid-neutral-clr);
   margin-top: 2rem;
   padding: 1.5rem;
   border-radius: .75rem;
@@ -330,6 +331,64 @@ h3 {
 .modal-description {
   text-align: left;
   margin-top: 1.5rem;
+}
+
+/*Pledge Selection Component Styling */
+
+.pledge-option-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid var(--mid-neutral-clr);
+  border-radius: .75rem;
+  padding: 1.75rem 1rem;
+}
+
+.pledge-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.selected-container {
+  height: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid var(--mid-neutral-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-fill {
+  height: .8rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--light-accent-clr);
+}
+
+.pledge-header-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.pledge-option-container p {
+  text-align: left;
+}
+
+.remaining-pledges-section {
+  font-size: 1.125rem;
+  margin-bottom: 0;
+}
+
+.remaining-pledges-section span {
+  font-weight: 700;
+  color: var(--black-clr);
+  margin-right: 10px;
 }
 
 /*========== MEDIA QUERIES ===========================*/
