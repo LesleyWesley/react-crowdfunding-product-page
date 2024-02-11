@@ -9,15 +9,29 @@ import data from "./data.json"
 function App() {
 
   const [bookmarked, setBookmarked] = React.useState(false)
+  const [modalOpen, setModalOpen] = React.useState(false)
 
   function toggleBookmark() {
     setBookmarked(prevBookmark => !prevBookmark)
   }
 
+  function openModal() {
+    setModalOpen(true)
+  }
+
+  function closeModal() {
+    setModalOpen(false)
+  }
+
   return (
     <div className="app">
-      <MainPage data={data} bookmarked={bookmarked} handleClick={toggleBookmark}/>
-      <SelectionModal />
+      <MainPage
+        data={data}
+        bookmarked={bookmarked}
+        toggleBookmark={toggleBookmark}
+        openModal={openModal}
+      />
+      {modalOpen && <SelectionModal closeModal={closeModal}/>}
     </div>
   )
 }

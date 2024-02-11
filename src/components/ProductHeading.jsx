@@ -8,8 +8,8 @@ function ProductHeading (props) {
           <h1>Mastercraft Bamboo Monitor Riser</h1>
           <p>A beautifully & handcrafted monitor stand to reduce neck and eye strain.</p>
           <div className="product-heading--button-section">
-              <button type="button" className="backing-button">Back this project</button>
-              <button type="button" className="bookmark-button" onClick={props.handleClick}>
+              <button type="button" className="backing-button" onClick={props.openModal}>Back this project</button>
+              <button type="button" className="bookmark-button" onClick={props.toggleBookmark}>
                   <img src={props.bookmarked ? "icon-bookmark-active.svg" : "icon-bookmark.svg"} alt="bookmark" />
                   <span className={props.bookmarked ? "bookmark-heading bookmarked" : "bookmark-heading"}>{props.bookmarked ? "Bookmarked" : "Bookmark"}</span>
               </button>

@@ -13,7 +13,9 @@ function RewardOptionAvailable(props) {
             <span className="amount-remaining">{props.remaining}</span>
             left
           </p>
-          <button type="button" className="select-reward" disabled={props.soldOut}>{props.soldOut ? "Out of Stock" : "Select Reward"}</button>
+          <button type="button" className="select-reward" disabled={props.soldOut} onClick={props.openModal}>
+            {props.soldOut ? "Out of Stock" : "Select Reward"}
+          </button>
         </div>
     </div>
   )

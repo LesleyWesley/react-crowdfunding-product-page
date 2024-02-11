@@ -12,6 +12,7 @@ function AboutSection(props) {
         description={reward.rewardDescription}
         remaining={reward.rewardsLeft}
         soldOut={reward.soldOut}
+        openModal={props.openModal}
       />
     )
   })

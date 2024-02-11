@@ -328,6 +328,10 @@ h3 {
   margin: 0;
 }
 
+.modal-close-button {
+  background-color: #FFF;
+}
+
 .modal-description {
   text-align: left;
   margin-top: 1.5rem;
