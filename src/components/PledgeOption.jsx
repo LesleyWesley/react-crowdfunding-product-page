@@ -2,7 +2,7 @@ import React from "react"
 
 function PledgeOption() {
   return (
-    <div className="pledge-option-container">
+    <div className="pledge-option-container selected">
         <div className="pledge-header">
             <div className="selected-container">
                 <div className="selected-fill"></div>

@@ -9,7 +9,7 @@ import data from "./data.json"
 function App() {
 
   const [bookmarked, setBookmarked] = React.useState(false)
-  const [modalOpen, setModalOpen] = React.useState(false)
+  const [modalOpen, setModalOpen] = React.useState(true)
 
   function toggleBookmark() {
     setBookmarked(prevBookmark => !prevBookmark)

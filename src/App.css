@@ -370,7 +370,7 @@ h3 {
   height: .8rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: var(--light-accent-clr);
+  background-color: #FFF;
 }
 
 .pledge-header-details {
@@ -393,6 +393,15 @@ h3 {
   font-weight: 700;
   color: var(--black-clr);
   margin-right: 10px;
+}
+
+.selected {
+  border: 1px solid var(--light-accent-clr);
+  box-shadow: 0px 0px 0px 2px var(--light-accent-clr);
+}
+
+.selected .selected-fill {
+  background-color: var(--light-accent-clr);
 }
 
 /*========== MEDIA QUERIES ===========================*/
