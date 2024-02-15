@@ -1,7 +1,20 @@
 import React from "react"
 import PledgeOption from "./PledgeOption.jsx"
+import data from  "../data.json"
 
 function SelectionModal(props){
+
+  const optionElements = data.map(option => {
+    return (
+      <PledgeOption
+        name={option.rewardName}
+        pledgeAmount={option.pledgeAmount}
+        description={option.rewardDescription}
+        remaining={option.rewardsLeft}
+      />
+    )
+  })
+
   return (
     <div className="selection-modal-bg">
       <div className="selection-modal-container">
@@ -12,7 +25,11 @@ function SelectionModal(props){
               </button>
           </div>
           <p className="modal-description">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-          <PledgeOption />
+          <PledgeOption
+            name="Pledge with no reward"
+            description="Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email."
+          />
+          {optionElements}
       </div>
     </div>
   )

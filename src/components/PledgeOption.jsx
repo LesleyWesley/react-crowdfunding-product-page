@@ -1,22 +1,22 @@
 import React from "react"
 
-function PledgeOption() {
+function PledgeOption(props) {
   return (
-    <div className="pledge-option-container selected">
+    <div className="pledge-option-container">
         <div className="pledge-header">
             <div className="selected-container">
                 <div className="selected-fill"></div>
             </div>
             <div className="pledge-header-details">
-                <h3>Bamboo Stand</h3>
-                <span className="option-description">Pledge $25 or more</span>
+                <h3>{props.name}</h3>
+                {props.pledgeAmount && <span className="option-description">Pledge {props.pledgeAmount} or more</span>}
             </div>
         </div>
-        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campain, and you'll be added to a special Backer member list.</p>
-        <p className="remaining-pledges-section">
-          <span>101</span>
+        <p>{props.description}</p>
+        {props.pledgeAmount && <p className="remaining-pledges-section">
+          <span>{props.remaining}</span>
           left
-        </p>
+        </p>}
     </div>
   )
 }
