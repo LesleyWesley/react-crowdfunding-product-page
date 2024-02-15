@@ -385,6 +385,10 @@ h3 {
   margin-bottom: 1.5rem;
 }
 
+.pledge-option-container.sold-out{
+  opacity: 50%;
+}
+
 .pledge-option-container p {
   text-align: left;
 }

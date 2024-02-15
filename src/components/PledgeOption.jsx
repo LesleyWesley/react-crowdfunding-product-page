@@ -2,7 +2,7 @@ import React from "react"
 
 function PledgeOption(props) {
   return (
-    <div className="pledge-option-container">
+    <div className={props.soldOut ? "pledge-option-container sold-out" : "pledge-option-container"}>
         <div className="pledge-header">
             <div className="selected-container">
                 <div className="selected-fill"></div>

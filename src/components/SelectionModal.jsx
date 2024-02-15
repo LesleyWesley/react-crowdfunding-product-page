@@ -11,6 +11,7 @@ function SelectionModal(props){
         pledgeAmount={option.pledgeAmount}
         description={option.rewardDescription}
         remaining={option.rewardsLeft}
+        soldOut={option.soldOut}
       />
     )
   })
