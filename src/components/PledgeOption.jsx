@@ -1,6 +1,10 @@
 import React from "react"
 
 function PledgeOption(props) {
+
+  const [expanded, setExpanded] = React.useState(false)
+  
+
   return (
     <div className={props.soldOut ? "pledge-option-container sold-out" : "pledge-option-container"}>
         <div className="pledge-header">
@@ -17,6 +21,13 @@ function PledgeOption(props) {
           <span>{props.remaining}</span>
           left
         </p>}
+        <form>
+            <h4>Enter your pledge</h4>
+            <div classname="form-elements">
+                <input type="number" />
+                <button>Continue</button>
+            </div>
+        </form>
     </div>
   )
 }
