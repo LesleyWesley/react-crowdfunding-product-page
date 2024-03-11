@@ -7,23 +7,25 @@ function PledgeOption(props) {
 
   return (
     <label>
-        <input type="radio" name="pledgeOption" />
+        <input type="radio" name="pledgeOption" class="pledge-radio"/>
         <div className={props.soldOut ? "pledge-option-container sold-out" : "pledge-option-container"}>
-            <div className="pledge-header">
-                <div className="selected-container">
-                    <div className="selected-fill"></div>
+            <div className="pledge-option-details">
+                <div className="pledge-header">
+                    <div className="selected-container">
+                        <div className="selected-fill"></div>
+                    </div>
+                    <div className="pledge-header-details">
+                        <h3>{props.name}</h3>
+                        {props.pledgeAmount && <span className="option-description">Pledge {props.pledgeAmount} or more</span>}
+                    </div>
                 </div>
-                <div className="pledge-header-details">
-                    <h3>{props.name}</h3>
-                    {props.pledgeAmount && <span className="option-description">Pledge {props.pledgeAmount} or more</span>}
-                </div>
+                <p>{props.description}</p>
+                {props.pledgeAmount && <p className="remaining-pledges-section">
+                  <span>{props.remaining}</span>
+                  left
+                </p>}
             </div>
-            <p>{props.description}</p>
-            {props.pledgeAmount && <p className="remaining-pledges-section">
-              <span>{props.remaining}</span>
-              left
-            </p>}
-            <form>
+            <form className="pledge-form">
                 <h4>Enter your pledge</h4>
                 <div classname="form-elements">
                     <input type="number" />
