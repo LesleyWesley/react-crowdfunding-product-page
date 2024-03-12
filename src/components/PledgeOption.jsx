@@ -27,9 +27,9 @@ function PledgeOption(props) {
             </div>
             <form className="pledge-form">
                 <h4>Enter your pledge</h4>
-                <div classname="form-elements">
-                    <input type="number" />
-                    <button>Continue</button>
+                <div className="form-elements">
+                    <input type="number" className="pledge-input"/>
+                    <button className="continue">Continue</button>
                 </div>
             </form>
         </div>

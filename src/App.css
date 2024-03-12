@@ -431,6 +431,31 @@ h3 {
   font-weight: 400;
 }
 
+div.form-elements {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pledge-input {
+  padding: 1rem;
+  width: 40%;
+  border-radius: 2rem;
+  border-color: var(--light-neutral-clr);
+  font-weight: 700;
+}
+
+.continue {
+  background-color: var(--light-accent-clr);
+  padding: 1rem;
+  width: 50%;
+}
+
+.continue:focus,
+.continue:hover {
+  background-color: var(--dark-accent-clr);
+  cursor: pointer;
+}
 /*========== MEDIA QUERIES ===========================*/
 
 @media (min-width: 700px) {
