@@ -28,7 +28,8 @@ function PledgeOption(props) {
             <form className="pledge-form">
                 <h4>Enter your pledge</h4>
                 <div className="form-elements">
-                    <input type="number" className="pledge-input"/>
+                    <label class="pledge-amount-label">$<input type="number" className="pledge-input"/></label>
+
                     <button className="continue">Continue</button>
                 </div>
             </form>

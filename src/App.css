@@ -437,7 +437,7 @@ div.form-elements {
   justify-content: space-between;
 }
 
-.pledge-input {
+.pledge-amount-label {
   padding: 1rem;
   width: 40%;
   border-radius: 2rem;
