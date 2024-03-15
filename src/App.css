@@ -438,11 +438,15 @@ div.form-elements {
 }
 
 .pledge-amount-label {
-  padding: 1rem;
-  width: 40%;
-  border-radius: 2rem;
-  border-color: var(--light-neutral-clr);
-  font-weight: 700;
+    padding: 1rem;
+    color: var(--mid-neutral-clr);
+    border: 1px solid var(--mid-neutral-clr);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 2rem;
+    width: 40%;
+    font-weight: 700;
 }
 
 .continue {
