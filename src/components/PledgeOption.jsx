@@ -6,8 +6,8 @@ function PledgeOption(props) {
 
 
   return (
-    <label>
-        <input type="radio" name="pledgeOption" class="pledge-radio"/>
+    <label disabled={props.soldOut}>
+        <input type="radio" name="pledgeOption" class="pledge-radio" disabled={props.soldOut}/>
         <div className={props.soldOut ? "pledge-option-container sold-out" : "pledge-option-container"}>
             <div className="pledge-option-details">
                 <div className="pledge-header">

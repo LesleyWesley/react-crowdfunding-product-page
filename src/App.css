@@ -333,6 +333,11 @@ h3 {
   background-color: #FFF;
 }
 
+.modal-close-button:focus,
+.modal-close-button:hover {
+  cursor: pointer;
+}
+
 .modal-description {
   text-align: left;
   margin-top: 1.5rem;
@@ -348,6 +353,11 @@ h3 {
   border: 1px solid var(--mid-neutral-clr);
   border-radius: .75rem;
   padding: .5rem 0 1.75rem 0;
+}
+
+.pledge-option-container:focus,
+.pledge-option-container:hover {
+  cursor: pointer;
 }
 
 .pledge-option-details {
