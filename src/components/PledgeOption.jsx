@@ -16,7 +16,7 @@ function PledgeOption(props) {
                     </div>
                     <div className="pledge-header-details">
                         <h3>{props.name}</h3>
-                        {props.pledgeAmount && <span className="option-description">Pledge {props.pledgeAmount} or more</span>}
+                        {props.pledgeAmount && <span className="option-description">Pledge ${props.pledgeAmount} or more</span>}
                     </div>
                 </div>
                 <p>{props.description}</p>
@@ -28,7 +28,7 @@ function PledgeOption(props) {
             <form className="pledge-form">
                 <h4>Enter your pledge</h4>
                 <div className="form-elements">
-                    <label class="pledge-amount-label">$<input type="number" className="pledge-input"/></label>
+                    <label class="pledge-amount-label">$<input type="number" className="pledge-input" min={props.pledgeAmount}/></label>
 
                     <button className="continue">Continue</button>
                 </div>

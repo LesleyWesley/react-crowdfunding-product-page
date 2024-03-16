@@ -5,7 +5,7 @@ function RewardOptionAvailable(props) {
     <div className={props.soldOut ? "reward-option sold-out" : "reward-option"}>
         <div className="option-heading">
             <h3>{props.name}</h3>
-            <span className="option-description">Pledge {props.pledgeAmount} or more</span>
+            <span className="option-description">Pledge ${props.pledgeAmount} or more</span>
         </div>
         <p className="option-paragraph">{props.description}</p>
         <div className="option-footer">
