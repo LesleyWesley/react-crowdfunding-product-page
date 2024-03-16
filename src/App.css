@@ -435,6 +435,7 @@ div.form-elements {
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
+  width: 90%;
 }
 
 .pledge-amount-label {
@@ -445,13 +446,26 @@ div.form-elements {
     justify-content: flex-start;
     align-items: center;
     border-radius: 2rem;
-    width: 40%;
+    width: 45%;
     font-weight: 700;
+}
+
+.pledge-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin-left: 5px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.pledge-input:focus {
+  border: none;
 }
 
 .continue {
   background-color: var(--light-accent-clr);
-  padding: 1rem;
+  font-weight: 400;
   width: 50%;
 }
 
