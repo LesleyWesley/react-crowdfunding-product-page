@@ -416,6 +416,7 @@ h3 {
   font-weight: 700;
   color: var(--black-clr);
   margin-right: 10px;
+  font-size: 1.5rem;
 }
 
 .selected {
@@ -529,6 +530,10 @@ div.form-elements {
     max-width: 700px;
   }
 
+  .selection-modal-container {
+    max-width: 700px;
+  }
+
   /*Product Heading Component- Desktop*/
 
   .product-heading-section {
@@ -595,6 +600,22 @@ div.form-elements {
 
   .select-reward {
     padding: 1.125rem 1.75rem;
+  }
+
+  /*Pledge Option Component*/
+
+  .selection-modal-container {
+    padding: 2rem;
+  }
+
+  .pledge-header-details {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .remaining-pledges-section {
+    order: -4;
   }
 
 }

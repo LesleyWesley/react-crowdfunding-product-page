@@ -17,7 +17,7 @@ function SelectionModal(props){
   })
 
   return (
-    <div className="selection-modal-bg" onClick={props.closeModal}>
+    <div className="selection-modal-bg">
       <div className="selection-modal-container">
           <div className="modal-header">
               <h2>Back this project</h2>
